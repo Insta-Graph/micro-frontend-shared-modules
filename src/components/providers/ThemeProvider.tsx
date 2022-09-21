@@ -2,7 +2,9 @@ import React from 'react';
 
 import { CssBaseline, ThemeProvider as MaterialThemeProvider } from '@mui/material';
 
-import customTheme from '../../themes/customTheme';
+import { createCustomTheme } from '../../themes';
+
+const customTheme = createCustomTheme();
 
 const ThemeProvider: React.FC<{ children: JSX.Element }> = ({ children }) => {
   return (

@@ -92,6 +92,4 @@ export const theme = (): Theme => {
   return themes;
 };
 
-const customTheme = theme();
-
-export default customTheme;
+export default theme;

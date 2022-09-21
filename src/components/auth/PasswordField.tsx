@@ -13,27 +13,35 @@ import {
   Typography,
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { useFormikContext } from 'formik';
 
 import { strengthIndicator, strengthColor } from '../../utils/passwordStrength';
 
 interface PasswordFieldProps {
   showPasswordStrength?: boolean;
   fieldName: string;
+  currentValue: string;
+  passwordTouched: string | undefined;
+  passwordError: string | undefined;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  handleBlur: (e: React.FocusEvent<any>) => void;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  handleChange: (e: React.ChangeEvent<any>) => void;
   label: string;
 }
 
 const PasswordField: React.VFC<PasswordFieldProps> = ({
   showPasswordStrength,
   fieldName,
+  currentValue,
+  passwordTouched,
+  passwordError,
+  handleChange,
+  handleBlur,
   label,
 }) => {
   const theme = useTheme();
 
   const [showPassword, setShowPassword] = useState(false);
-  const { values, touched, errors, handleBlur, handleChange } = useFormikContext<{
-    [key: string]: string;
-  }>();
   const [strength, setStrength] = useState(0);
   const [level, setLevel] = useState<{
     label: string;
@@ -52,14 +60,14 @@ const PasswordField: React.VFC<PasswordFieldProps> = ({
     <>
       <FormControl
         fullWidth
-        error={Boolean(touched[fieldName] && errors[fieldName])}
+        error={Boolean(passwordTouched && passwordError)}
         sx={theme.typography.customInput as SxProps<Theme>}
       >
         <InputLabel htmlFor="outlined-adornment-password-register">{label}</InputLabel>
         <OutlinedInput
           id="outlined-adornment-password-register"
           type={showPassword ? 'text' : 'password'}
-          value={values[fieldName]}
+          value={currentValue}
           name={fieldName}
           label={label}
           onBlur={handleBlur}
@@ -82,9 +90,9 @@ const PasswordField: React.VFC<PasswordFieldProps> = ({
           }
           inputProps={{}}
         />
-        {touched[fieldName] && errors[fieldName] && (
+        {passwordTouched && passwordError && (
           <FormHelperText error id="standard-weight-helper-text-password-register">
-            {errors[fieldName]}
+            {passwordError}
           </FormHelperText>
         )}
       </FormControl>

@@ -1,8 +1,6 @@
 import { Divider, Grid, Link, Stack, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-import SnapifyLogo from '../icons/SnapifyLogo';
-
 import AuthCardWrapper from './AuthCardWrapper';
 import AuthContainer from './AuthContainer';
 import AuthFooter from './AuthFooter';
@@ -32,7 +30,12 @@ const AuthLayout: React.FC<{
                   <Grid item sx={{ mb: 3 }}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <Link component="div">
-                      <SnapifyLogo />
+                      <img
+                        src="https://d9n5ick2dabpy.cloudfront.net/images/logo.png"
+                        alt="Your Logo"
+                        title="Your Logo"
+                        width="145"
+                      />
                     </Link>
                   </Grid>
                   <Grid item xs={12}>
