@@ -1,21 +1,21 @@
 {
-  "name": "@my-app/utility",
+  "name": "@snapify/shared-modules",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edwardramirez31/micro-frontend-utility-module"
+    "url": "git+https://github.com/Insta-Graph/micro-frontend-shared-modules"
   },
-  "description": "Micro frontend utility module",
+  "description": "Snapify micro frontend shared-modules repository",
   "keywords": [
-    "utility",
+    "shared-modules",
     "micro frontend",
     "single-spa"
   ],
   "license": "ISC",
-  "author": "Edward Ramirez",
+  "author": "Snapify Technologies",
   "bugs": {
-    "url": "https://github.com/edwardramirez31/micro-frontend-utility-module/issues"
+    "url": "https://github.com/Insta-Graph/micro-frontend-shared-modules/issues"
   },
-  "homepage": "https://github.com/edwardramirez31/micro-frontend-utility-module#readme",
+  "homepage": "https://github.com/Insta-Graph/micro-frontend-shared-modules#readme",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -79,7 +79,12 @@
     "ts-config-single-spa": "^3.0.0",
     "@types/testing-library__jest-dom": "^5.14.1",
     "eslint-config-ts-react-important-stuff": "^3.0.0",
-    "webpack-config-single-spa-react-ts": "^4.0.0"
+    "webpack-config-single-spa-react-ts": "^4.0.0",
+    "@types/react": "17.0.40",
+    "@types/react-dom": "^17.0.11"
+  },
+  "resolutions": {
+    "@types/react": "17.0.40"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -89,13 +94,16 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0"
   },
-  "main": "dist/my-app-utility.js",
-  "types": "dist/my-app-utility.d.ts",
+  "main": "dist/snapify-shared-modules.js",
+  "types": "dist/snapify-shared-modules.d.ts",
   "files": [
     "dist"
   ],
-  "version": "1.1.0"
+  "version": "1.0.0"
 }

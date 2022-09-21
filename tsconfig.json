@@ -6,7 +6,7 @@
     "module": "commonjs",
     "emitDeclarationOnly": false
   },
-  "files": ["src/my-app-utility.tsx"],
+  "files": ["src/snapify-shared-modules.tsx"],
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

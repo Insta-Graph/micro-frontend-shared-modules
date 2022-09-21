@@ -21,6 +21,7 @@
     "prettier/prettier": "error",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    "no-duplicate-imports": "off",
     "no-underscore-dangle": "off",
     "no-use-before-define": "off",
     "no-param-reassign": ["error", { "ignorePropertyModificationsFor": ["draft"] }],
