@@ -1,3 +1,10 @@
+# 1.0.0 (2022-09-21)
+
+
+### Features
+
+* create shared auth containers to render common style ([fa9e3dc](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/fa9e3dc78cc5db2176d10f79257994c6ccc35cc5))
+
 # [1.1.0](https://github.com/edwardramirez31/micro-frontend-utility-module/compare/v1.0.0...v1.1.0) (2022-09-07)
 
 
