@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.0.1...v1.1.0) (2022-09-21)
+
+
+### Features
+
+* set breadcrumbs and password field common components ([e580a75](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/e580a750f44eff4899af13462c8a0e4a8577b2c3))
+
 ## [1.0.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.0.0...v1.0.1) (2022-09-21)
 
 
