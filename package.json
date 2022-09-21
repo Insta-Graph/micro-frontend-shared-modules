@@ -98,7 +98,8 @@
     "@mui/material": "^5.10.0",
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
-    "@emotion/styled": "^11.10.0"
+    "@emotion/styled": "^11.10.0",
+    "formik": "^2.2.9"
   },
   "main": "dist/snapify-shared-modules.js",
   "types": "dist/snapify-shared-modules.d.ts",
