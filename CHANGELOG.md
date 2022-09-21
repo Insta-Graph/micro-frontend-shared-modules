@@ -1,0 +1,13 @@
+# [1.1.0](https://github.com/edwardramirez31/micro-frontend-utility-module/compare/v1.0.0...v1.1.0) (2022-09-07)
+
+
+### Features
+
+* handle semantic release and npm upload setup at project bootstrap script ([5ba8ca3](https://github.com/edwardramirez31/micro-frontend-utility-module/commit/5ba8ca3d81c8f79d1055242d4e040cd68acdb28a))
+
+# 1.0.0 (2022-09-03)
+
+
+### Features
+
+* initial utility module structure ([bfdb8bf](https://github.com/edwardramirez31/micro-frontend-utility-module/commit/bfdb8bf4229fae1b9b3ae7bea7710a8e0ffb5c85))
