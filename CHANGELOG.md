@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.0.0...v1.0.1) (2022-09-21)
+
+
+### Bug Fixes
+
+* use concurrently at testing workflow ([c19a4ff](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/c19a4ff85229f981175446606aa7fa59bd24ddc8))
+
 # 1.0.0 (2022-09-21)
 
 
