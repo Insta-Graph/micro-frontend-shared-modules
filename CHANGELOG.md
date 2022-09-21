@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.1.0...v1.1.1) (2022-09-21)
+
+
+### Bug Fixes
+
+* pass password field formik values as props to avoid context error ([07dc0f2](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/07dc0f28c86417d67ada3d17b723e9b632b760d6))
+
 # [1.1.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.0.1...v1.1.0) (2022-09-21)
 
 
