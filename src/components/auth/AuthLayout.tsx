@@ -1,5 +1,6 @@
-import { Divider, Grid, Link, Stack, Typography, useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Divider, Grid, Link } from '@mui/material';
+
+import { SnapifyLogo } from '../icons';
 
 import AuthCardWrapper from './AuthCardWrapper';
 import AuthContainer from './AuthContainer';
@@ -8,12 +9,8 @@ import AuthFooter from './AuthFooter';
 const AuthLayout: React.FC<{
   children: JSX.Element;
   cardFooter: JSX.Element;
-  pageTitle: string;
-  pageDescription: string;
-}> = ({ children, cardFooter, pageTitle, pageDescription }) => {
-  const theme = useTheme();
-  const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
-
+  cardHeader?: JSX.Element;
+}> = ({ children, cardFooter, cardHeader }) => {
   return (
     <AuthContainer>
       <Grid container direction="column" justifyContent="flex-end" sx={{ minHeight: '100vh' }}>
@@ -27,44 +24,17 @@ const AuthLayout: React.FC<{
             <Grid item sx={{ m: { xs: 1, sm: 3 }, mb: 0 }}>
               <AuthCardWrapper>
                 <Grid container spacing={2} alignItems="center" justifyContent="center">
-                  <Grid item sx={{ mb: 3 }}>
+                  <Grid item sx={{ maxWidth: '200px' }}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <Link component="div">
-                      <img
-                        src="https://d9n5ick2dabpy.cloudfront.net/images/logo.png"
-                        alt="Your Logo"
-                        title="Your Logo"
-                        width="145"
-                      />
+                      <SnapifyLogo />
                     </Link>
                   </Grid>
-                  <Grid item xs={12}>
-                    <Grid
-                      container
-                      direction={matchDownSM ? 'column-reverse' : 'row'}
-                      alignItems="center"
-                      justifyContent="center"
-                    >
-                      <Grid item>
-                        <Stack alignItems="center" justifyContent="center" spacing={1}>
-                          <Typography
-                            color={theme.palette.secondary.main}
-                            gutterBottom
-                            variant={matchDownSM ? 'h3' : 'h2'}
-                          >
-                            {pageTitle}
-                          </Typography>
-                          <Typography
-                            variant="caption"
-                            fontSize="16px"
-                            textAlign={matchDownSM ? 'center' : 'inherit'}
-                          >
-                            {pageDescription}
-                          </Typography>
-                        </Stack>
-                      </Grid>
+                  {cardHeader && (
+                    <Grid item xs={12}>
+                      {cardHeader}
                     </Grid>
-                  </Grid>
+                  )}
                   <Grid item xs={12}>
                     {children}
                   </Grid>

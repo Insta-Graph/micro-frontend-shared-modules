@@ -20,7 +20,7 @@ interface PasswordFieldProps {
   showPasswordStrength?: boolean;
   fieldName: string;
   currentValue: string;
-  passwordTouched: string | undefined;
+  passwordTouched: boolean | undefined;
   passwordError: string | undefined;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   handleBlur: (e: React.FocusEvent<any>) => void;
