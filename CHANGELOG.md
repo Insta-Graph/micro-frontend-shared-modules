@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.1.1...v1.2.0) (2022-09-22)
+
+
+### Features
+
+* add authentication service ([78a19d3](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/78a19d3bee670de0f8999071086a44ab5b053cf0))
+* use auth provider to handle private and protected routes ([c978bd2](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/c978bd23360c0eca2e0f8295c1edec4fd13f5d3e))
+
 ## [1.1.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.1.0...v1.1.1) (2022-09-21)
 
 
