@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.6.0...v1.7.0) (2022-09-23)
+
+
+### Features
+
+* save user data in auth service ([8967a4d](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/8967a4d6d10589d13cfe0b7b62117c218cc039fa))
+
 # [1.6.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.5.0...v1.6.0) (2022-09-23)
 
 
