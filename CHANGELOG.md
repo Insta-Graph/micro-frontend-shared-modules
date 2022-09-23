@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.4.0...v1.5.0) (2022-09-23)
+
+
+### Features
+
+* handle token refresh ([35b6299](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/35b6299533fe1221f844a4924232d0e63c90d74b))
+* use new layout to show user navbar ([4acf4c5](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/4acf4c523d07dc507e9e0ef80812abd2acdd7333))
+
 # [1.4.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.3.1...v1.4.0) (2022-09-23)
 
 
