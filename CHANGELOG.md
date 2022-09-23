@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.3.0...v1.3.1) (2022-09-23)
+
+
+### Bug Fixes
+
+* add organization prefix to new import map service url ([bb9136b](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/bb9136b41f3732572e8fe42c14f2ee7019f4e72b))
+
 # [1.3.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.2.0...v1.3.0) (2022-09-23)
 
 
