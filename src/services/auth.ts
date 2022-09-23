@@ -11,7 +11,8 @@ class AuthService {
   constructor(accessToken: string) {
     this.accessToken = accessToken;
     this.expiresIn = ACCESS_TOKEN_EXPIRATION;
-    this.userData = JSON.parse(localStorage.getItem('userData') ?? '') || null;
+    const data = localStorage.getItem('userData');
+    this.userData = data ? JSON.parse(data) : null;
   }
 
   public getAccessToken(): string {
