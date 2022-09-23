@@ -1,3 +1,5 @@
+import 'cross-fetch/polyfill';
+
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 import { BACKEND_HOST } from '../constants';
