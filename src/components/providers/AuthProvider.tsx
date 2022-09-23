@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 import { navigate } from '@reach/router';
 
-import { BACKEND_HOST } from '../../constants';
+import { ACCESS_TOKEN_EXPIRATION, BACKEND_HOST } from '../../constants';
 import type { ErrorResponse, RefreshTokenResponse } from '../../constants/types';
+import { useGetUserByIdQuery } from '../../generated';
 import { authService } from '../../services';
 import Loader from '../ui/Loader';
 
@@ -13,18 +14,25 @@ interface Props {
 }
 
 const AuthProvider: React.FC<Props> = ({ children, protectedRoute }) => {
+  const accessToken = authService.getAccessToken();
   const [isAuthenticationHandled, setIsAuthenticationHandled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
+  const { data: userData, error: userError } = useGetUserByIdQuery({
+    variables: { getUserByIdId: '2' },
+  });
+  // eslint-disable-next-line no-console
+  console.log(userData);
+  // eslint-disable-next-line no-console
+  console.log(userError);
   useEffect(() => {
-    if (isAuthenticationHandled && !authService.getAccessToken()) {
+    if (isAuthenticationHandled && !accessToken) {
       navigate('/sign-in');
     }
 
-    if (protectedRoute && authService.getAccessToken()) {
+    if (protectedRoute && accessToken) {
       navigate('/');
     }
-  }, [isAuthenticationHandled, protectedRoute]);
+  }, [isAuthenticationHandled, protectedRoute, accessToken]);
 
   const refreshToken = async (): Promise<void> => {
     try {
@@ -34,27 +42,54 @@ const AuthProvider: React.FC<Props> = ({ children, protectedRoute }) => {
       if ('accessToken' in data) {
         authService.setAccessToken(data.accessToken);
         authService.setAccessTokenExpiration(data.expiresIn);
+      } else if ('status' in data) {
+        navigate('/');
       }
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log(error);
-    } finally {
-      setIsAuthenticationHandled(true);
-      setIsLoading(false);
+      // eslint-disable-next-line no-console
+      console.log(JSON.stringify(error));
     }
   };
 
   useEffect(() => {
-    refreshToken();
+    refreshToken().finally(() => {
+      setIsAuthenticationHandled(true);
+      setIsLoading(false);
+    });
   }, []);
 
-  const isProtected = protectedRoute && isAuthenticationHandled && authService.getAccessToken();
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log('HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
+    // eslint-disable-next-line no-console
+    console.log(accessToken);
+    let timeout: NodeJS.Timeout;
+    if (accessToken !== '') {
+      // eslint-disable-next-line no-console
+      console.log('===============================================');
+
+      timeout = setTimeout(() => {
+        refreshToken().finally(() => {
+          setIsAuthenticationHandled(true);
+          setIsLoading(false);
+        });
+      }, ACCESS_TOKEN_EXPIRATION * 1000);
+    }
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [accessToken]);
+
+  const isProtected = protectedRoute && isAuthenticationHandled && accessToken;
 
   if (isProtected) {
     return <Loader />;
   }
 
-  if (!authService.getAccessToken() && !protectedRoute) {
+  if (!accessToken && !protectedRoute) {
     return <Loader />;
   }
 
