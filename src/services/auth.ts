@@ -1,13 +1,17 @@
 import { ACCESS_TOKEN_EXPIRATION } from '../constants';
+import type { User } from '../generated';
 
 class AuthService {
   private accessToken: string;
 
   private expiresIn: number;
 
+  private userData: User | null;
+
   constructor(accessToken: string) {
     this.accessToken = accessToken;
     this.expiresIn = ACCESS_TOKEN_EXPIRATION;
+    this.userData = JSON.parse(localStorage.getItem('userData') ?? '') || null;
   }
 
   public getAccessToken(): string {
@@ -24,6 +28,14 @@ class AuthService {
 
   public setAccessTokenExpiration(newValue: number): void {
     this.expiresIn = newValue;
+  }
+
+  public getUser(): User {
+    return this.userData;
+  }
+
+  public setUser(newValue: User): void {
+    this.userData = newValue;
   }
 }
 
