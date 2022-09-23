@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.3.1...v1.4.0) (2022-09-23)
+
+
+### Features
+
+* expose graphql hooks and apollo client to micro frontends ([e1a02eb](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/e1a02eb95cef6fbfe853fb5bc8995c3c5a944071))
+
 ## [1.3.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.3.0...v1.3.1) (2022-09-23)
 
 
