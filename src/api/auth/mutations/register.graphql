@@ -1,0 +1,22 @@
+mutation Register($input: UserCreateInput!) {
+  registerUser(input: $input) {
+    ... on AuthData {
+      user {
+        avatar
+        email
+        lastName
+        firstName
+        username
+        _id
+      }
+      auth {
+        accessToken
+        expiresIn
+      }
+    }
+    ... on ResponseStatus {
+      message
+      success
+    }
+  }
+}

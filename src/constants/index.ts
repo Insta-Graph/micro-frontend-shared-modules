@@ -1,4 +1,4 @@
-export const ACCESS_TOKEN_EXPIRATION = 900;
+export const ACCESS_TOKEN_EXPIRATION = 30;
 
 export const REFRESH_TOKEN_EXPIRATION = 86400;
 

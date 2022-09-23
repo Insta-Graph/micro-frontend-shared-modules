@@ -30,7 +30,8 @@
     "prepare": "husky install",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build-npm": "tsc",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "gen-types": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
@@ -81,12 +82,19 @@
     "eslint-config-ts-react-important-stuff": "^3.0.0",
     "webpack-config-single-spa-react-ts": "^4.0.0",
     "@types/react": "17.0.40",
-    "@types/react-dom": "^17.0.11"
+    "@types/react-dom": "^17.0.11",
+    "@types/graphql": "^14.5.0",
+    "@graphql-codegen/cli": "2.12.1",
+    "@graphql-codegen/typescript-react-apollo": "3.3.3",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@graphql-codegen/typescript": "2.7.3"
   },
   "resolutions": {
     "@types/react": "17.0.40"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "graphql": "^16.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "single-spa-react": "^4.3.1",

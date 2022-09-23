@@ -11,6 +11,10 @@ export const config = {
 
 export const TOKEN_REFRESH_EXPIRATION = 86400;
 
+export const ACCESS_TOKEN_EXPIRATION = 30;
+
+export const BACKEND_HOST = 'http://localhost:3000/graphql';
+
 const constants = { drawerWidth, config, TOKEN_REFRESH_EXPIRATION };
 
 export default constants;
