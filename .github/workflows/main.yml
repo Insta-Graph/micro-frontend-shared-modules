@@ -71,7 +71,7 @@ jobs:
           MICRO_FRONTEND_NAME: ${{ secrets.MICRO_FRONTEND_NAME }}
           IDENTIFIER: ${{ github.sha }}
       - name: Update import map
-        run: curl -u ${USERNAME}:${PASSWORD} -d '{ "service":"@snapify/'"${MICRO_FRONTEND_NAME}"'","url":"https://'"${CLOUDFRONT_HOST}"'/'"${MICRO_FRONTEND_NAME}"'/'"${IDENTIFIER}"'/'"${MICRO_FRONTEND_NAME}"'.js" }' -X PATCH https://${IMD_HOST}/services/\?env=prod -H "Accept:application/json" -H "Content-Type:application/json"
+        run: curl -u ${USERNAME}:${PASSWORD} -d '{ "service":"@snapify/'"${MICRO_FRONTEND_NAME}"'","url":"https://'"${CLOUDFRONT_HOST}"'/'"${MICRO_FRONTEND_NAME}"'/'"${IDENTIFIER}"'/'snapify-"${MICRO_FRONTEND_NAME}"'.js" }' -X PATCH https://${IMD_HOST}/services/\?env=prod -H "Accept:application/json" -H "Content-Type:application/json"
         env:
           USERNAME: ${{ secrets.IMD_USERNAME }}
           PASSWORD: ${{ secrets.IMD_PASSWORD }}
