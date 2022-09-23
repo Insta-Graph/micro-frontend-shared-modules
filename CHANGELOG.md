@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.5.0...v1.6.0) (2022-09-23)
+
+
+### Features
+
+* use cross fetch api ([29fbed9](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/29fbed9a0b893ac013a36c657965b5e258021522))
+
 # [1.5.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.4.0...v1.5.0) (2022-09-23)
 
 
