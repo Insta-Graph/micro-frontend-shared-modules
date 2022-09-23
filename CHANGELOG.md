@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.0...v1.7.1) (2022-09-23)
+
+
+### Bug Fixes
+
+* parse user data only if exists ([e9028a3](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/e9028a390a327f2b2d6727e0ec9f15c935e01aa3))
+
 # [1.7.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.6.0...v1.7.0) (2022-09-23)
 
 
