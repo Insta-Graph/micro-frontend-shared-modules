@@ -4,7 +4,6 @@ import { navigate } from '@reach/router';
 
 import { ACCESS_TOKEN_EXPIRATION, BACKEND_HOST } from '../../constants';
 import type { ErrorResponse, RefreshTokenResponse } from '../../constants/types';
-import { useGetUserByIdQuery } from '../../generated';
 import { authService } from '../../services';
 import Loader from '../ui/Loader';
 
@@ -17,13 +16,7 @@ const AuthProvider: React.FC<Props> = ({ children, protectedRoute }) => {
   const accessToken = authService.getAccessToken();
   const [isAuthenticationHandled, setIsAuthenticationHandled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const { data: userData, error: userError } = useGetUserByIdQuery({
-    variables: { getUserByIdId: '2' },
-  });
-  // eslint-disable-next-line no-console
-  console.log(userData);
-  // eslint-disable-next-line no-console
-  console.log(userError);
+
   useEffect(() => {
     if (isAuthenticationHandled && !accessToken) {
       navigate('/sign-in');
