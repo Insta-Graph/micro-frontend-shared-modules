@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.2.0...v1.3.0) (2022-09-23)
+
+
+### Features
+
+* upload build files to unique folder and call import map deployer ([d63962b](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/d63962bfd50960b97e667d648fee1c29b5c760c6))
+
 # [1.2.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.1.1...v1.2.0) (2022-09-22)
 
 
