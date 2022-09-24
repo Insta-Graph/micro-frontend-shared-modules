@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.1...v1.7.2) (2022-09-24)
+
+
+### Bug Fixes
+
+* handle auth redirects correctly ([b952e8a](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/b952e8ae7e9a00abce052d79a0001d83f4e91f6f))
+
 ## [1.7.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.0...v1.7.1) (2022-09-23)
 
 
