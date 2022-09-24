@@ -169,7 +169,7 @@ const UserNavbar: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Link to="/">
+          <Link to="/feed">
             <Typography
               variant="h6"
               noWrap
