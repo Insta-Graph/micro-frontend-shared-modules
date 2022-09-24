@@ -1,4 +1,4 @@
-export { default as apolloClient } from './api';
+export { default as getApolloClient } from './api';
 export { ApolloProvider } from '@apollo/client';
 
 export { default as RootComponent } from './root.component';
