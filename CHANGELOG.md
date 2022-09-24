@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.2...v1.7.3) (2022-09-24)
+
+
+### Bug Fixes
+
+* export custom apollo provider instead of the original ([2bc8c70](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/2bc8c70760132052eb76abd90feaffd066e1f065))
+
 ## [1.7.2](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.1...v1.7.2) (2022-09-24)
 
 
