@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.0...v1.8.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* remove emotion server ([638457c](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/638457c4be5e4e62f5722d732070a646e111b844))
+
 # [1.8.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.3...v1.8.0) (2022-09-26)
 
 
