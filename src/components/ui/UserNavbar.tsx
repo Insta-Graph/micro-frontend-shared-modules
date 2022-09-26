@@ -16,7 +16,10 @@ import MenuItem from '@mui/material/MenuItem';
 import { styled, alpha } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Link } from '@reach/router';
+
+import Logout from '../auth/Logout';
+
+import CustomLink from './CustomLink';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -100,11 +103,12 @@ const UserNavbar: React.FC = () => {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>
-        <Link to="/profile">Profile</Link>
+        <CustomLink to="/profile">Profile</CustomLink>
       </MenuItem>
       <MenuItem onClick={handleMenuClose}>
-        <Link to="/account">My account</Link>
+        <CustomLink to="/account">My account</CustomLink>
       </MenuItem>
+      <Logout component={MenuItem} />
     </Menu>
   );
 
@@ -169,16 +173,11 @@ const UserNavbar: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Link to="/feed">
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ display: { xs: 'none', sm: 'block' } }}
-            >
-              MUI
+          <CustomLink to="/feed">
+            <Typography variant="h3" noWrap sx={{ display: { xs: 'none', sm: 'block' } }}>
+              Snapify
             </Typography>
-          </Link>
+          </CustomLink>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
