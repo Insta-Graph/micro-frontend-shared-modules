@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.3...v1.8.0) (2022-09-26)
+
+
+### Bug Fixes
+
+* solve auth provider redirect conflicts ([54c8619](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/54c8619c70536a49a7f834fedf38dbaf199962e9))
+
+
+### Features
+
+* use custom error boundary component ([3dbcfff](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/3dbcfff7ec82203979f01d76af9250aca6d7428d))
+* use logout custom link ([c91c522](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/c91c5221c4479f2c570e891dc6ee0fcd1032c084))
+
 ## [1.7.3](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.7.2...v1.7.3) (2022-09-24)
 
 
