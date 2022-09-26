@@ -108,6 +108,7 @@
     "graphql": "^16.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
   },
