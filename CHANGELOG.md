@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.1...v1.8.2) (2022-10-05)
+
+
+### Bug Fixes
+
+* point to deployed backend graphql api ([9077107](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/9077107c0504c0099a3a22a444fce9227327503d))
+
 ## [1.8.1](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.0...v1.8.1) (2022-09-26)
 
 
