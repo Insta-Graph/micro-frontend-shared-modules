@@ -65,6 +65,12 @@ import { utilityName } from '@${PROJECT_NAME}/{UTILITY_MODULE_NAME}';
 
 - It's recommended to use the root config module template from [this template](https://github.com/edwardramirez31/micro-frontend-root-template) to be consistent with project naming convention
 
+- To setup environment variables, change the `start` script at `package.json` and use the `--env` flag
+
+```
+webpack serve --env isLocal
+```
+
 - Set ACTIONS_DEPLOY_ACCESS_TOKEN secret at your repository with a GitHub Personal Access Token so that Semantic Release can work properly
 
   - This token should have full control of private repositories
