@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.2...v1.8.3) (2022-10-05)
+
+
+### Bug Fixes
+
+* set right access token expiration ([ef875f4](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/ef875f40d6ddfd9e2d2b6772f8918a838e70cf82))
+
 ## [1.8.2](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.1...v1.8.2) (2022-10-05)
 
 
