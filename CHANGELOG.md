@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.3...v1.8.4) (2022-10-06)
+
+
+### Bug Fixes
+
+* assume a role to deploy changes ([2cbb165](https://github.com/Insta-Graph/micro-frontend-shared-modules/commit/2cbb165c581b822ec71c75fc081b711a05e61a44))
+
 ## [1.8.3](https://github.com/Insta-Graph/micro-frontend-shared-modules/compare/v1.8.2...v1.8.3) (2022-10-05)
 
 
