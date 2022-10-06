@@ -57,8 +57,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.FRONTEND_DEPLOYMENT_ROLE }}
+          role-session-name: DeployFrontendSharedModulesSession
+          role-duration-seconds: 900
           aws-region: us-east-1
       - name: Remove tsconfig options for NPM
         run: rm -rf dist && sed -i.bak -e '6,7d' tsconfig.json
